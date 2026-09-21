@@ -1,5 +1,7 @@
 # DNS Switcher for Windows
 
+**Version 1.0**
+
 [Deutsch](#deutsch) · [English](#english)
 
 ---
@@ -9,6 +11,8 @@
 ### DNS Switcher für Windows
 
 Eine kleine Python-GUI zum schnellen Wechseln der DNS-Server eines Windows-Netzwerkadapters.
+
+Aktuelle Version: **1.0**
 
 ### Voraussetzungen
 
@@ -67,6 +71,8 @@ Nach jeder Änderung leert das Programm automatisch den lokalen DNS-Cache.
 ### DNS Switcher for Windows
 
 A small Python GUI for quickly changing the DNS servers of a Windows network adapter.
+
+Current version: **1.0**
 
 ### Requirements
 

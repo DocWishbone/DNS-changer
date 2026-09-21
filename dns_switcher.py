@@ -13,7 +13,9 @@ from pathlib import Path
 from tkinter import messagebox, ttk
 
 
-APP_TITLE = "DNS Switcher"
+APP_NAME = "DNS Switcher"
+APP_VERSION = "1.0"
+APP_TITLE = f"{APP_NAME} {APP_VERSION} - DocWishbone 2026"
 CREATE_NO_WINDOW = 0x08000000
 PROFILE_FILE = Path(os.environ.get("APPDATA", str(Path.home()))) / "DNS-Switcher" / "profiles.json"
 STATE_FILE = PROFILE_FILE.with_name("state.json")
@@ -172,7 +174,7 @@ class DnsSwitcher(tk.Tk):
         outer.pack(fill="both", expand=True)
         outer.columnconfigure(1, weight=1)
 
-        ttk.Label(outer, text="DNS-Server wechseln", font=("Segoe UI Semibold", 17)).grid(
+        ttk.Label(outer, text=f"DNS-Server wechseln · Version {APP_VERSION}", font=("Segoe UI Semibold", 17)).grid(
             row=0, column=0, columnspan=3, sticky="w", pady=(0, 18)
         )
 
